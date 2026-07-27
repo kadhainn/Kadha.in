@@ -223,3 +223,69 @@ color:#bdbdbd;
 font-size:14px;
 margin:8px 0 12px;
 }
+/* Premium UI */
+
+body{
+background:#0b0b0b;
+}
+
+.header{
+backdrop-filter:blur(12px);
+background:rgba(20,20,20,.85);
+}
+
+.story{
+overflow:hidden;
+border:1px solid #2f2f2f;
+}
+
+.story:hover{
+transform:translateY(-8px);
+box-shadow:0 15px 35px rgba(255,152,0,.35);
+}
+
+.cover{
+transition:.4s;
+}
+
+.story:hover .cover{
+transform:scale(1.05);
+}
+
+button{
+transition:.3s;
+}
+
+button:hover{
+transform:scale(1.05);
+}
+
+.cards{
+gap:25px;
+}
+
+.card{
+border:1px solid #2a2a2a;
+}
+
+.card:hover{
+box-shadow:0 15px 35px rgba(255,152,0,.35);
+}
+
+input{
+background:#1d1d1d;
+color:#fff;
+}
+
+::-webkit-scrollbar{
+width:8px;
+}
+
+::-webkit-scrollbar-thumb{
+background:#ff9800;
+border-radius:10px;
+}
+
+::-webkit-scrollbar-track{
+background:#151515;
+}
