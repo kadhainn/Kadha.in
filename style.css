@@ -186,3 +186,15 @@ line-height:1.8;
 margin-bottom:20px;
 color:#ff9800;
 }
+.story{
+transition:0.3s;
+}
+
+.story:hover{
+transform:translateY(-5px);
+box-shadow:0 10px 25px rgba(255,152,0,.3);
+}
+
+html{
+scroll-behavior:smooth;
+}
