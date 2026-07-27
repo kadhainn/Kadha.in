@@ -1,44 +1,23 @@
-// kadha.in Script
+const search = document.querySelector('input[type="text"]');
 
-const search = document.querySelector(".hero input");
+if (search) {
+  search.addEventListener("keyup", function () {
+    const value = this.value.toLowerCase();
 
-search.addEventListener("keyup", function () {
+    document.querySelectorAll(".story").forEach(story => {
+      const text = story.textContent.toLowerCase();
 
-let value = this.value.toLowerCase();
+      if (text.includes(value)) {
+        story.style.display = "block";
+      } else {
+        story.style.display = "none";
+      }
+    });
+  });
+}
 
-document.querySelectorAll(".story").forEach(story => {
-
-story.style.display =
-story.innerText.toLowerCase().includes(value)
-? "block"
-: "none";
-
-});
-
-});
-
-document.querySelectorAll(".card").forEach(card=>{
-
-card.onclick=()=>{
-
-alert(card.querySelector("h3").innerText+" കഥകൾ ഉടൻ വരുന്നു ❤️");
-
-};
-
-});
-
-document.querySelectorAll("button").forEach(btn=>{
-
-btn.addEventListener("mouseenter",()=>{
-
-btn.style.transform="scale(1.05)";
-
-});
-
-btn.addEventListener("mouseleave",()=>{
-
-btn.style.transform="scale(1)";
-
-});
-
+document.querySelectorAll(".card").forEach(card => {
+  card.addEventListener("click", () => {
+    alert(card.querySelector("h3").innerText + " കഥകൾ ഉടൻ കൂടുതൽ ലഭ്യമാകും.");
+  });
 });
