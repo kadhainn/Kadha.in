@@ -198,3 +198,15 @@ box-shadow:0 10px 25px rgba(255,152,0,.3);
 html{
 scroll-behavior:smooth;
 }
+#trending{
+padding:40px 20px;
+}
+
+#trending h2{
+margin-bottom:20px;
+}
+
+#trending .card{
+background:#262626;
+border:1px solid #333;
+}
